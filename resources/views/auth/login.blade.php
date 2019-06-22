@@ -81,16 +81,16 @@
 
 					<div class="login100-form-social flex-c-m">
 						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-							<i class="fa fa-email" aria-hidden="true"></i>
+							<i class="fa fa-facebook-f" aria-hidden="true"></i>
 						</a>
 
 						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-							<i class="fa fa-github" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
 						</a>
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url('images/bg-01.jpg');">
+				<div class="login100-more" style="background-image: url('loginv14/images/bg-02.jpg');">
 				</div>
 			</div>
 		</div>
@@ -105,17 +105,17 @@
 <!--===============================================================================================-->
 	<script src="loginv14/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-	<script src="loginv14/vendor/bootstrap/js/popper.js"></script>
-	<script src="loginv14/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script src="loginv14/vendor/select2/select2.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script src="loginv14/vendor/daterangepicker/moment.min.js"></script>
-	<script src="loginv14/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
-	<script src="loginv14/vendor/countdowntime/countdowntime.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="loginv14/js/main.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

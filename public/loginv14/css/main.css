@@ -197,7 +197,7 @@ iframe {
   margin: 0 auto;
 }
 
-/* .container-login100 {
+.container-login100 {
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
@@ -209,7 +209,7 @@ iframe {
   justify-content: center;
   align-items: center;
   background: #f2f2f2;
-} */
+}
 
 
 .wrap-login100 {
@@ -478,7 +478,7 @@ input.input100 {
   width: 100%;
   height: 50px;
   border-radius: 10px;
-  background: #07c5ff;
+  background: #089cff;
 
   font-family: Montserrat-Bold;
   font-size: 12px;
