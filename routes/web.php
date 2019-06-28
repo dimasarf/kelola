@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Route PMI
+Route::get('/dashboard-pmi', 'PMI\dashboardAdminController@index');
+Route::get('/rekomendasi-tim', 'PMI\rekomendasiTimController@index');
+Route::get('/upload-rencana', 'PMI\uploadRencanaController@index');
+
+//Route RHA
