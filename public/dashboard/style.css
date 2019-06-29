@@ -184,7 +184,7 @@ body {}
 /*  2.  Header Top CSS
 /*----------------------------------------*/
 .header-top-area, .footer-copyright-area{
-	background:#949ba1;
+	background:#089cff;
 }
 .logo-area{
 	padding:14px 0px;
@@ -193,17 +193,17 @@ body {}
 	float: right;
 }
 .nav.notika-top-nav .open>a, .nav.notika-top-nav .open>a:focus, .nav.notika-top-nav .open>a:hover {
-    background: #00c292;
-    border-color: 0px solid #00c292;
+    background: #089cff;
+    border-color: 0px solid #16b7f7;
 	
 }
 .nav.notika-top-nav>li>a:focus, .nav.notika-top-nav>li>a:hover {
     text-decoration: none;
-    background-color: #00c292;
+    background-color: #16b7f7;
 }
 .navbar-nav>li>a{
-	color:rgb(14, 13, 13);
-	padding: 20px 0px 20px 30px;
+	color:rgb(252, 252, 252);
+	padding: 20px 20px 20px 20px;
 }
 .rtl-layout .navbar-nav>li>a{
 	padding: 20px 30px 20px 0px;
