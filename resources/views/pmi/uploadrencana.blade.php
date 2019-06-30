@@ -110,17 +110,22 @@
                         <div class="cmp-tb-hd">
                             <h2>Upload</h2>
                         </div>
+                        {{-- <form method="post" action="/upload-rencana" enctype="multipart/form-data" 
+                          class="dropzone" id="dropzone">
+                          @csrf
+                        </form>    --}}
                         <div id="dropzone1" class="multi-uploader-cs">
-                            <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
+                            <form action="/upload-rencana" class="dropzone dropzone-nk needsclick" id="demo1-upload" method="POST">
+                              @csrf
                                 <div class="dz-message needsclick download-custom">
                                     <i class="notika-icon notika-cloud"></i>
                                     <h2>Klik atau seret file kesini</h2>
-                                    <p><span class="note needsclick">File yang anda pilih akan disimpan</span>
+                                    <p><span class="note needsclick">File yang anda pilih akan secara otomatis tersimpan</span>
                                     </p>
-                                </div>
+                                </div>                                
                         </div>
+                        
                         <br>
-                        <button class="btn btn-block btn-success notika-btn-success" type="submit">Upload</button>
                             </form>
                         
                     </div>
@@ -202,7 +207,7 @@
     <script src="/dashboard/js/summernote/summernote-active.js"></script>
     <!-- dropzone JS
 		============================================ -->
-    <script src="/dashboard/js/dropzone/dropzone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>
     <!--  wave JS
 		============================================ -->
     <script src="/dashboard/js/wave/waves.min.js"></script>
@@ -225,4 +230,25 @@
 	<!-- tawk chat JS
 		============================================ -->
     <script src="/dashboard/js/tawk-chat.js"></script>
+    <script type="text/javascript">
+      Dropzone.options.dropzone =
+       {
+          maxFilesize: 12,
+          renameFile: function(file) {
+              var dt = new Date();
+              var time = dt.getTime();
+             return time+file.name;
+          },
+          addRemoveLinks: true,
+          timeout: 5000,
+          success: function(file, response) 
+          {
+              console.log(response);
+          },
+          error: function(file, response)
+          {
+             return false;
+          }
+        };
+    </script>
 @endsection
