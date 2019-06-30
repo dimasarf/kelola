@@ -39,10 +39,21 @@
 @endsection
 
 @section('konten')
-
- <!-- datapicker CSS============================================ -->
-<!-- owl.carousel CSS
+<link rel="stylesheet" href="/dashboard/css/wave/button.css">
+<!-- favicon
 		============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <!-- Google Fonts
+            ============================================ -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+        <!-- Bootstrap CSS
+            ============================================ -->
+        <link rel="stylesheet" href="/dashboard/css/bootstrap.min.css">
+        <!-- font awesome CSS
+            ============================================ -->
+        <link rel="stylesheet" href="/dashboard/css/font-awesome.min.css">
+        <!-- owl.carousel CSS
+            ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/owl.carousel.css">
         <link rel="stylesheet" href="/dashboard/css/owl.theme.css">
         <link rel="stylesheet" href="/dashboard/css/owl.transitions.css">
@@ -61,7 +72,6 @@
         <!-- normalize CSS
             ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/normalize.css">
-        
         <!-- mCustomScrollbar CSS
             ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/scrollbar/jquery.mCustomScrollbar.min.css">
@@ -89,7 +99,6 @@
         <!-- wave CSS
             ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/wave/waves.min.css">
-        <link rel="stylesheet" href="/dashboard/css/wave/button.css">
         <!-- main CSS
             ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/main.css">
@@ -102,32 +111,66 @@
         <!-- modernizr JS
             ============================================ -->
         <script src="/dashboard/js/vendor/modernizr-2.8.3.min.js"></script>
-<div class="dropzone-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="dropdone-nk mg-t-30">
-                        <div class="cmp-tb-hd">
-                            <h2>Upload</h2>
-                        </div>
-                        <div id="dropzone1" class="multi-uploader-cs">
-                            <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
-                                <div class="dz-message needsclick download-custom">
-                                    <i class="notika-icon notika-cloud"></i>
-                                    <h2>Klik atau seret file kesini</h2>
-                                    <p><span class="note needsclick">File yang anda pilih akan disimpan</span>
-                                    </p>
+<div class="form-element-area">        
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="">
+                    <div class="form-element-list">
+                            <div class="basic-tb-hd">
+                                <h2>Halaman Bentuk Tim</h2>
+                                <p>Tim akan dibentuk berdasarkan laporan yang dipilih</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-1 col-lg-4 col-md-6 col-sm-4 col-xs-12">
+                                    <div class="form-group ic-cmp-int form-elet-mg">
+                                        <div class="form-ic-cmp">
+                                            <i class="notika-icon notika-edit"></i>
+                                        </div>
+                                        <div class="nk-int-st">
+                                                <div class="bootstrap-select fm-cmp-mg">
+                                                    <select class="selectpicker" data-live-search="true">
+                                                        <option>Banjir</option>
+                                                        <option>Cariska</option>
+                                                        <option>Cheriska</option>
+                                                        <option>Malias</option>
+                                                        <option>Kamines</option>
+                                                        <option>Austranas</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="col-lg-offset-2 col-lg-4 col-md-6 col-sm-4 col-xs-12">
+                                        <div class="form-group ic-cmp-int form-elet-mg">
+                                            <div class="form-ic-cmp">
+                                                <i class="notika-icon notika-edit"></i>
+                                            </div>
+                                            <div class="nk-int-st">
+                                                    <div class="bootstrap-select fm-cmp-mg">
+                                                        <select class="selectpicker" data-live-search="true">
+                                                            <option>Banjir</option>
+                                                            <option>Cariska</option>
+                                                            <option>Cheriska</option>
+                                                            <option>Malias</option>
+                                                            <option>Kamines</option>
+                                                            <option>Austranas</option>
+                                                        </select>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <a href="/rekomendasi-tim" class="btn btn-success notika-btn-success col-lg-offset-5" style="margin-top: 4%">Bentuk Tim</a>
                         </div>
-                        <br>
-                        <button class="btn btn-block btn-success notika-btn-success" type="submit">Upload</button>
-                            </form>
                         
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
+    </div>
 </div>
+
 <script src="/dashboard/js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
 		============================================ -->
@@ -218,7 +261,7 @@
     <script src="/dashboard/js/todo/jquery.todo.js"></script>
     <!-- plugins JS
 		============================================ -->
-    <script src="js/plugins.js"></script>
+    <script src="/dashboard/js/plugins.js"></script>
     <!-- main JS
 		============================================ -->
     <script src="/dashboard/js/main.js"></script>
