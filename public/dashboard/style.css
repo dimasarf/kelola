@@ -55,7 +55,7 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 html, body {font-family: 'Roboto', sans-serif;font-weight:400;}
-body {background:#F6F8FA;}
+body {background:rgb(255, 255, 255);}
 .floatleft {float:left}
 .floatright {float:right}
 .alignleft {float:left;margin-right:15px;margin-bottom: 15px}
@@ -187,7 +187,7 @@ body {}
 	background:#089cff;
 }
 .logo-area{
-	padding:14px 0px;
+	padding:19px 0px;
 }
 .nav.navbar-nav.notika-top-nav{
 	float: right;
@@ -804,7 +804,7 @@ ul.notika-menu-wrap li a{
     margin: 0;
     font-size: 14px;
     color: #fff;
-    padding: 15px 0px;
+    padding: 8px 0px;
     text-align: center;
 }
 .footer-copyright-area a{

@@ -69,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="logo-area">
-                        <a href="#"><img src="/dashboard/img/logo/logo.png" alt="" /></a>
+                        <a href="#"><img src="/dashboard/img/logo/2.png" alt="" /></a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -466,7 +466,10 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="footer-copy-right">
-                        <p>Footer Kelola</p>
+                    <p href="#"><img src="/dashboard/img/logo/logo2.png" alt="" /></p>
+                    <p>Jl. Siliwangi No.3, RT.09/RW.15, Area Sawah, Banyuraden, Gamping,</P>
+                    <p>Kabupaten Sleman, Daerah Istimewa Yogyakarta 55293</p>
+                    <p>Telepon: (0274)6499653)</p>
                     </div>
                 </div>
             </div>
