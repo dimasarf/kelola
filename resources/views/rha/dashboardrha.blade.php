@@ -38,7 +38,7 @@
         </div>
     </div>
 </div>    
-@endsection --}}
+@endsection
 
 @section('konten')
 <div class="notika-status-area">

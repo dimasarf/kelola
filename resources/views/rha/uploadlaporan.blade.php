@@ -7,19 +7,19 @@
                 <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
                     <li class="active"><a data-toggle="tab" href="/dashboard-pmi"><i class="notika-icon notika-house"></i> Home</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Laporan</a>
+                    <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Download Laporan</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Forms"><i class="notika-icon notika-form"></i> Rencana Kontijensi</a>
+                    <li><a data-toggle="tab" href="#Forms"><i class="notika-icon notika-form"></i>Upload Laporan</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Page"><i class="notika-icon notika-support"></i> Tim</a>
+                    <li><a data-toggle="tab" hr]ef="#Page"><i class="notika-icon notika-support"></i> Tim</a>
                     </li>
                 </ul>
                 <div class="tab-content custom-menu-content">
                     <div id="Forms" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="/upload-rencana">Upload Rencana</a>
+                            <li><a href="/upload-rencana">Upload Laporan</a>
                             </li>
-                            <li><a href="/daftar-rencana">Daftar Rencana</a>
+                            <li><a href="/daftar-rencana">Daftar Laporan</a>
                             </li>
                         </ul>
                     </div>
@@ -108,7 +108,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="dropdone-nk mg-t-30">
                         <div class="cmp-tb-hd">
-                            <h2>Upload</h2>
+                            <h2>Upload Laporan</h2>
                         </div>
                         {{-- <form method="post" action="/upload-rencana" enctype="multipart/form-data" 
                           class="dropzone" id="dropzone">
@@ -124,10 +124,19 @@
                                     </p>
                                 </div>                                
                         </div>
-                        
                         <br>
-                            </form>
-                        
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Nama</span>
+                          </div>
+                          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Lokasi</span>
+                          </div>
+                          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                      </form>     
                     </div>
                 </div>
             </div>
