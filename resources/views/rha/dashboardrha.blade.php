@@ -39,7 +39,7 @@
     </div>
 </div>    
 @endsection --}}
-@extends('layouts.navbarRha')
+
 @section('konten')
 <div class="notika-status-area">
     <div class="container">
