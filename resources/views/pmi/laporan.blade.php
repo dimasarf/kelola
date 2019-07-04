@@ -39,7 +39,7 @@
 @endsection
 
 @section('konten')
-    <link rel="stylesheet" href="/dashboard/css/wave/button.css">
+<link rel="stylesheet" href="/dashboard/css/wave/button.css">
 <!-- favicon
     ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/jquery.dataTables.min.css">
@@ -119,7 +119,7 @@
                 <form action="">
                     <div class="form-element-list">
                             <div class="basic-tb-hd">
-                                <h2>Halaman Bentuk Tim</h2>
+                                <h2>Halaman Download</h2>
                                 <p>Tim akan dibentuk berdasarkan laporan yang dipilih</p>
                             </div>
                             <div class="row">
@@ -130,8 +130,7 @@
                                             <th>Id Laporan</th>
                                             <th>Jenis Bencana</th>
                                             <th>Lokasi</th>
-                                            <th>Jumlah Korban</th>
-                                            <th>Kerusakan Infrastruktur</th>
+                                            <th>Petugas</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -140,41 +139,36 @@
                                             <td>1</td>
                                             <td>Banjir</td>
                                             <td>Jakarta</td>
-                                            <td>13</td>
-                                            <td>14</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
+                                            <td>Bambang</td>
+                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Download</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Gempa Bumi</td>
                                             <td>Bandung</td>
-                                            <td>12</td>
-                                            <td>11</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
+                                            <td>Bambang</td>
+                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Download</a></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Tsunami</td>
                                             <td>Kebumen</td>
-                                            <td>400</td>
-                                            <td>700</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
+                                            <td>Bambang</td>
+                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Download</a></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>Tsunami</td>
                                             <td>Depok</td>
-                                            <td>20</td>
-                                            <td>22</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
+                                            <td>Bambang</td>
+                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Download</a></td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td>Puting beliung</td>
                                             <td>Ambon</td>
-                                            <td>40</td>
-                                            <td>33</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
+                                            <td>Bambang</td>
+                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Download</a></td>
                                         </tr>                                    
                                     </tbody>
                                     <tfoot>
@@ -182,8 +176,7 @@
                                             <th>Id Laporan</th>
                                             <th>Jenis Bencana</th>
                                             <th>Lokasi</th>
-                                            <th>Jumlah Korban</th>
-                                            <th>Kerusakan Infrastruktur</th>
+                                            <th>Petugas</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </tfoot>
@@ -298,5 +291,5 @@
 <script src="/dashboard/js/main.js"></script>
 <!-- tawk chat JS
 ============================================ -->
-<script src="js/tawk-chat.js"></script>
+<script src="/dashboard/js/tawk-chat.js"></script>
 @endsection

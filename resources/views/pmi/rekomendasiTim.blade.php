@@ -2,14 +2,12 @@
 @section('navbar')
 <div class="main-menu-area mg-tb-40">
     <div class="container">
-    
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            
                 <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                    <li class="active"><a data-toggle="tab" href="/dashboard-pmi"><i class="notika-icon notika-house"></i> Home</a>
+                    <li class="active"><a  href="/dashboard-pmi"><i class="notika-icon notika-house"></i> Home</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Laporan</a>
+                    <li><a  href="/laporan"><i class="notika-icon notika-windows"></i> Laporan</a>
                     </li>
                     <li><a data-toggle="tab" href="#Forms"><i class="notika-icon notika-form"></i> Rencana Kontijensi</a>
                     </li>
@@ -34,9 +32,7 @@
                         </ul>
                     </div>
                 </div>
-               
             </div>
-            
         </div>
     </div>
 </div>    
