@@ -1,4 +1,4 @@
-@extends('layouts.dashboardLayout')
+@extends('layouts.dashboardRha')
 @section('navbar')
 <div class="main-menu-area mg-tb-40">
     <div class="container">

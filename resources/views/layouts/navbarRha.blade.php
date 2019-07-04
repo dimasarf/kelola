@@ -1,4 +1,4 @@
-@extends('layouts.dashboardLayout')
+@extends('layouts.dashboardRha')
 @section('navbarRha')
 <div class="main-menu-area mg-tb-40">
     <div class="container">
@@ -17,7 +17,7 @@
                 <div class="tab-content custom-menu-content">
                     <div id="Forms" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="/upload-rencana">Upload Rencana</a>
+                            <li><a href="/upload-rencana">Upload Laporan</a>
                             </li>
                             <li><a href="form-components.html">Daftar Rencana</a>
                             </li>
