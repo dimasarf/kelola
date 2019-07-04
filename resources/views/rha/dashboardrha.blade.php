@@ -1,4 +1,4 @@
-@extends('layouts.dashboardRha')
+@extends('layouts.dashboardLayout')
 @section('navbar')
 <div class="main-menu-area mg-tb-40">
     <div class="container">
@@ -7,9 +7,9 @@
                 <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
                     <li class="active"><a data-toggle="tab" href="/dashboard-pmi"><i class="notika-icon notika-house"></i> Home</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Laporan</a>
+                    <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i> Download Laporan</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Forms"><i class="notika-icon notika-form"></i> Rencana Kontijensi</a>
+                    <li><a data-toggle="tab" href="#Forms"><i class="notika-icon notika-form"></i> Upload Laporan</a>
                     </li>
                     <li><a data-toggle="tab" href="#Page"><i class="notika-icon notika-support"></i> Tim</a>
                     </li>
