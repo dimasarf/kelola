@@ -1,5 +1,5 @@
 @extends('layouts.dashboardRha')
-@section('navbar')
+{{-- @section('navbar')
 <div class="main-menu-area mg-tb-40">
     <div class="container">
         <div class="row">
@@ -36,8 +36,8 @@
         </div>
     </div>
 </div>    
-@endsection
-
+@endsection --}}
+@extends('layouts.navbarRha')
 @section('konten')
 <div class="notika-status-area">
     <div class="container">
