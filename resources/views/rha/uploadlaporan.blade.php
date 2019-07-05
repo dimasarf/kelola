@@ -141,6 +141,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-12 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group ic-cmp-int">
+                        <div class="form-ic-cmp">
+                            <i class="notika-icon notika-map"></i>
+                        </div>
+                        <div class="nk-int-st">
+                            <input type="text" class="form-control" placeholder="Jenis bencana" name="jenis_bencana">
+                        </div>
+                    </div>
+                </div>
                 </div>
                 <div class="modal-ft">
                   <button type="submit" class="btn btn-modal" id="next" style="margin-right: 40%; margin-top: 5%">Kirim</button>

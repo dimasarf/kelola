@@ -136,46 +136,16 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($hasils as $hasil)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Banjir</td>
-                                            <td>Jakarta</td>
-                                            <td>13</td>
-                                            <td>14</td>
+                                            <td>{{$hasil->id}}</td>
+                                            <td>{{$hasil->jenis_bencana}}</td>
+                                            <td>{{$hasil->lokasi}}</td>
+                                            <td>{{$hasil->korban}}</td>
+                                            <td>{{$hasil->infrastruktur}}</td>
                                             <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Gempa Bumi</td>
-                                            <td>Bandung</td>
-                                            <td>12</td>
-                                            <td>11</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Tsunami</td>
-                                            <td>Kebumen</td>
-                                            <td>400</td>
-                                            <td>700</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Tsunami</td>
-                                            <td>Depok</td>
-                                            <td>20</td>
-                                            <td>22</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Puting beliung</td>
-                                            <td>Ambon</td>
-                                            <td>40</td>
-                                            <td>33</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
-                                        </tr>                                    
+                                        @endforeach
                                     </tbody>
                                     <tfoot>
                                         <tr>

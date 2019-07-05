@@ -97,6 +97,7 @@
                                     <tr>
                                         <th>Id Laporan</th>
                                         <th>Lokasi</th>
+                                        <th>Jenis Bencana</th>
                                         <th>Jumlah Korban</th>
                                         <th>Kerusakan Infrastruktur</th>
                                     </tr>
@@ -106,17 +107,17 @@
                                         <tr>
                                             <td>{{$hasil->id}}</td>
                                             <td>{{$hasil->lokasi}}</td>
+                                            <td>{{$hasil->jenis_bencana}}</td>
                                             <td>{{$hasil->korban}}</td>
                                             <td>{{$hasil->infrastruktur}}</td>
                                         </tr>    
                                     @endforeach
-                                    
-                                                                  
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th>Id Laporan</th>
                                         <th>Lokasi</th>
+                                        <th>Jenis Bencana</th>
                                         <th>Jumlah Korban</th>
                                         <th>Kerusakan Infrastruktur</th>
                                     </tr>

@@ -77,4 +77,14 @@ class Kernel extends HttpKernel
         \Illuminate\Routing\Middleware\SubstituteBindings::class,
         \Illuminate\Auth\Middleware\Authorize::class,
     ];
+
+    Protected $RouteMiddleware = [
+        'Auth' => \Illuminate\Auth\Middleware\Authenticate::Class,
+        'Auth.Basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::Class,
+        'Bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::Class,
+        'Can' => \Illuminate\Auth\Middleware\Authorize::Class,
+        'Guest' => \App\Http\Middleware\RedirectIfAuthenticated::Class,
+        'Throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::Class,
+        'Role' => \App\Http\Middleware\RoleMiddleware::Class, // Yang Kita Daftarkan
+    ];
 }
