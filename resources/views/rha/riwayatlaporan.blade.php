@@ -24,7 +24,8 @@
 
  <!-- datapicker CSS============================================ -->
 <!-- owl.carousel CSS
-		============================================ -->
+        ============================================ -->
+        <link rel="stylesheet" href="/dashboard/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="/dashboard/css/owl.carousel.css">
         <link rel="stylesheet" href="/dashboard/css/owl.theme.css">
         <link rel="stylesheet" href="/dashboard/css/owl.transitions.css">
@@ -84,81 +85,49 @@
         <!-- modernizr JS
             ============================================ -->
         <script src="/dashboard/js/vendor/modernizr-2.8.3.min.js"></script>
-        <form action="/upload-laporan" id="demo1Upload" method="POST">
-          @csrf
-          <div class="row" id="identitas">
-            <div class="col-lg-offset-3 col-lg-6">
-              <div class="modal-inner-pro">
-                <div class="row">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-offset-1 col-lg-5">
-                          <img src="/dashboard/img/logo/logo2.png" alt="" class="mx-auto" style="margin-left: 20%"/>
-                          
-                          <h2 style="margin-top: 4%; margin-bottom: 6%; margin-left: 5%">Halaman Pelaporan Hasil Penilaian</h2>
-                      </div>
+        <div class="row">            
+            <div class="col-lg-offset-1 col-lg-8">
+                    <div class="basic-tb-hd">
+                        <h2>Riwayat Laporan</h2>
+                        <p>Halaman ini berisi riwayat laporan yang anda unggah</p>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
-                    <div class="form-group ic-cmp-int">
-                        <div class="form-ic-cmp">
-                            <i class="notika-icon notika-support"></i>
-                        </div>
-                        <div class="nk-int-st">
-                            <input type="text" class="form-control" placeholder="Nama Petugas" name="petugas">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
-                    <div class="form-group ic-cmp-int">
-                        <div class="form-ic-cmp">
-                            <i class="notika-icon notika-map"></i>
-                        </div>
-                        <div class="nk-int-st">
-                            <input type="text" class="form-control" placeholder="Lokasi Bencana" name="lokasi">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
-                    <div class="form-group ic-cmp-int">
-                        <div class="form-ic-cmp">
-                            <i class="notika-icon notika-support"></i>
-                        </div>
-                        <div class="nk-int-st">
-                            <input type="text" class="form-control" placeholder="Jumlah Korban" name="korban">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
-                    <div class="form-group ic-cmp-int">
-                        <div class="form-ic-cmp">
-                            <i class="notika-icon notika-mail"></i>
-                        </div>
-                        <div class="nk-int-st">
-                            <input type="text" class="form-control" placeholder="Jumlah Infrastruktur" name="infrastruktur">
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="modal-ft">
-                  <button type="submit" class="btn btn-modal" id="next" style="margin-right: 40%; margin-top: 5%">Kirim</button>
-                </div>
-              </div>
+                    <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id Laporan</th>
+                                        <th>Lokasi</th>
+                                        <th>Jumlah Korban</th>
+                                        <th>Kerusakan Infrastruktur</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($hasils as $hasil)
+                                        <tr>
+                                            <td>{{$hasil->id}}</td>
+                                            <td>{{$hasil->lokasi}}</td>
+                                            <td>{{$hasil->korban}}</td>
+                                            <td>{{$hasil->infrastruktur}}</td>
+                                        </tr>    
+                                    @endforeach
+                                    
+                                                                  
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Id Laporan</th>
+                                        <th>Lokasi</th>
+                                        <th>Jumlah Korban</th>
+                                        <th>Kerusakan Infrastruktur</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>    
             </div>
+            
+              
+              
           </div>
-        </form>
-        <br>
-        @if(Session::has('Pesan'))
-        <div class="row">
-          <div class="col-lg-offset-3 col-lg-6">
-              <div class="alert alert-success" role="alert">
-                  Data Berhasil Disimpan!
-              </div>
-          </div>
-        </div>
-        @endif
 </div>
 <script src="/dashboard/js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
@@ -191,6 +160,7 @@
 		============================================ -->
     <script src="/dashboard/js/sparkline/jquery.sparkline.min.js"></script>
     <script src="/dashboard/js/sparkline/sparkline-active.js"></script>
+    <script src="/dashboard/js/data-table/jquery.dataTables.min.js"></script>
     <!-- flot JS
 		============================================ -->
     <script src="/dashboard/js/flot/jquery.flot.js"></script>
@@ -252,7 +222,9 @@
 		============================================ -->
     <script src="js/plugins.js"></script>
     <!-- main JS
-		============================================ -->
+        ============================================ -->
+    <script src="/dashboard/js/data-table/data-table-act.js"></script>
+
     <script src="/dashboard/js/main.js"></script>
 	<!-- tawk chat JS
 		============================================ -->

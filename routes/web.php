@@ -43,3 +43,4 @@ Route::get('download-laporan','rha\downloadLaporanController@index');
 Route::get('upload-laporan','rha\uploadLaporanController@index');
 
 Route::post('/upload-laporan', 'rha\uploadLaporanController@store');
+Route::get('/riwayat-laporan', 'rha\riwayatLaporanController@index');
