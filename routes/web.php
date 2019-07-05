@@ -41,3 +41,5 @@ Route::get('/laporan','PMI\LaporanController@index');
 Route::get('dashboard-rha','rha\dashboardRhaController@index');
 Route::get('download-laporan','rha\downloadLaporanController@index');
 Route::get('upload-laporan','rha\uploadLaporanController@index');
+
+Route::post('/upload-laporan', 'rha\uploadLaporanController@store');

@@ -102,45 +102,70 @@
         <!-- modernizr JS
             ============================================ -->
         <script src="/dashboard/js/vendor/modernizr-2.8.3.min.js"></script>
-<div class="dropzone-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="dropdone-nk mg-t-30">
-                        <div class="cmp-tb-hd">
-                            <h2>Upload Laporan</h2>
+        <form action="/upload-laporan" id="demo1Upload" method="POST">
+          @csrf
+          <div class="row" id="identitas">
+            <div class="col-lg-offset-3 col-lg-6">
+              <div class="modal-inner-pro">
+                <div class="row">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-offset-1 col-lg-5">
+                          <img src="/dashboard/img/logo/logo2.png" alt="" class="mx-auto"/>
+                          
+                          <h2 style="margin-top: 4%; margin-bottom: 4%">Halaman Pelaporan Hasil Penilaian</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group ic-cmp-int">
+                        <div class="form-ic-cmp">
+                            <i class="notika-icon notika-support"></i>
                         </div>
-                        {{-- <form method="post" action="/upload-rencana" enctype="multipart/form-data" 
-                          class="dropzone" id="dropzone">
-                          @csrf
-                        </form>    --}}
-                        <div id="dropzone1" class="multi-uploader-cs">
-                            <form action="/upload-rencana" class="dropzone dropzone-nk needsclick" id="demo1-upload" method="POST">
-                              @csrf
-                                <div class="dz-message needsclick download-custom">
-                                    <i class="notika-icon notika-cloud"></i>
-                                    <h2>Klik atau seret file kesini</h2>
-                                    <p><span class="note needsclick">File yang anda pilih akan secara otomatis tersimpan</span>
-                                    </p>
-                                </div>                                
+                        <div class="nk-int-st">
+                            <input type="text" class="form-control" placeholder="Nama Petugas" name="nama">
                         </div>
-                        <br>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Nama</span>
-                          </div>
-                          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Lokasi</span>
-                          </div>
-                          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group ic-cmp-int">
+                        <div class="form-ic-cmp">
+                            <i class="notika-icon notika-map"></i>
                         </div>
-                      </form>     
+                        <div class="nk-int-st">
+                            <input type="text" class="form-control" placeholder="Lokasi Bencana" name="lokasi">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group ic-cmp-int">
+                        <div class="form-ic-cmp">
+                            <i class="notika-icon notika-next"></i>
+                        </div>
+                        <div class="nk-int-st">
+                            <input type="text" class="form-control" placeholder="Postal Code">
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group ic-cmp-int">
+                        <div class="form-ic-cmp">
+                            <i class="notika-icon notika-mail"></i>
+                        </div>
+                        <div class="nk-int-st">
+                            <input type="text" class="form-control" placeholder="Message">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-ft">
+                  <button type="button" class="btn btn-modal" id="next">Selanjutnya</button>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 </div>
 <script src="/dashboard/js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
@@ -240,16 +265,12 @@
 		============================================ -->
     <script src="/dashboard/js/tawk-chat.js"></script>
     <script type="text/javascript">
-      Dropzone.options.dropzone =
+      Dropzone.options.demo1Upload =
        {
-          maxFilesize: 12,
-          renameFile: function(file) {
-              var dt = new Date();
-              var time = dt.getTime();
-             return time+file.name;
-          },
+        autoProcessQueue: false,
           addRemoveLinks: true,
           timeout: 5000,
+          
           success: function(file, response) 
           {
               console.log(response);
@@ -259,5 +280,22 @@
              return false;
           }
         };
+        $(document).ready(function() {
+          $("#upload").hide();
+        });
+        $('#next').click(function()
+        {
+          $('#identitas').hide();
+          $("#upload").show();
+        })
+        $('#sebelum').click(function()
+        {
+          $('#identitas').show();
+          $("#upload").hide();
+        })
+        $("#button").click(function (e) {
+          e.preventDefault();
+          myDropzone.processQueue();
+      })
     </script>
 @endsection
