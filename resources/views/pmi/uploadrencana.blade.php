@@ -95,7 +95,7 @@
         <link rel="stylesheet" href="/dashboard/css/main.css">
         <!-- style CSS
             ============================================ -->
-        <link rel="stylesheet" href="/dashboard/style.css">
+        <link rel="stylesheet" href="/dashboard/style2.css">
         <!-- responsive CSS
             ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/responsive.css">
@@ -105,11 +105,10 @@
 <div class="dropzone-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="dropdone-nk mg-t-30">
-                        <div class="cmp-tb-hd">
-                            <h2>Upload</h2>
-                        </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">Upload Rencana</div>
+                <div class="panel-body">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         {{-- <form method="post" action="/upload-rencana" enctype="multipart/form-data" 
                           class="dropzone" id="dropzone">
                           @csrf
@@ -121,12 +120,18 @@
                                     <i class="notika-icon notika-cloud"></i>
                                     <h2>Klik atau seret file kesini</h2>
                                     <p><span class="note needsclick">File yang anda pilih akan secara otomatis tersimpan</span>
-                                    </p>
-                                </div>                                
+                                  </p>                            
+                                </div>
+
+
+
+
+
+                          </div>
                         </div>
                         
                         <br>
-                            </form>
+                      </form>
                         
                     </div>
                 </div>

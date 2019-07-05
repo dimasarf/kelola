@@ -1,4 +1,3 @@
-
 @extends('layouts.dashboardLayout')
 
 @section('navbar')
@@ -65,8 +64,10 @@
         </div>
     </div>
 </div>
+
 <!-- End Status area-->
 <!-- Start Sale Statistic area-->
+
 <div class="sale-statistic-area">
     <div class="container">
         <div class="row">
