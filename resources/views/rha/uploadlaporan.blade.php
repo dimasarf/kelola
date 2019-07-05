@@ -77,7 +77,7 @@
         <link rel="stylesheet" href="/dashboard/css/main.css">
         <!-- style CSS
             ============================================ -->
-        <link rel="stylesheet" href="/dashboard/style.css">
+        <link rel="stylesheet" href="/dashboard/style2.css">
         <!-- responsive CSS
             ============================================ -->
         <link rel="stylesheet" href="/dashboard/css/responsive.css">
