@@ -60,11 +60,11 @@
                     <div class="breadcomb-ctn">
                         <h2>Tim Assesment</h2>
                         <p>{{$nAssessment}} <span class="bread-ntd">orang </span></p>
-                        <button class="btn btn-success notika-btn-success">Lihat Tim</button>
+                        <button class="btn btn-success notika-btn-success" data-toggle="modal" data-target="#detailTimAssessment">Lihat Tim</button>
                     </div>
                 </div>                                    
             </div>
-            
+
             <div class="col-lg-3">
                 <div class="breadcomb-wp">
                     <div class="breadcomb-icon">
@@ -73,7 +73,7 @@
                     <div class="breadcomb-ctn">
                         <h2>Tim Evakuasi</h2>
                         <p>{{$nEvakuasi}} <span class="bread-ntd">orang </span></p>
-                        <button class="btn btn-success notika-btn-success">Lihat Tim</button>
+                        <button class="btn btn-success notika-btn-success" data-toggle="modal" data-target="#detailTimEvakuasi">Lihat Tim</button>
                     </div>
                 </div>                                    
             </div>
@@ -86,7 +86,7 @@
                     <div class="breadcomb-ctn">
                         <h2>Tim Kesehatan</h2>
                         <p>{{$nKesehatan}} <span class="bread-ntd">orang </span></p>
-                        <button class="btn btn-success notika-btn-success">Lihat Tim</button>
+                        <button class="btn btn-success notika-btn-success" data-toggle="modal" data-target="#detailTimKesehatan">Lihat Tim</button>
                     </div>
                 </div>                                    
             </div>
@@ -99,7 +99,7 @@
                     <div class="breadcomb-ctn">
                         <h2>Tim Dapur Umum</h2>
                         <p>{{$nDapur}} <span class="bread-ntd">orang </span></p>
-                        <button class="btn btn-success notika-btn-success">Lihat Tim</button>
+                        <button class="btn btn-success notika-btn-success" data-toggle="modal" data-target="#detailTimDapur">Lihat Tim</button>
                     </div>
                 </div>                                    
             </div>
@@ -114,7 +114,7 @@
                     <div class="breadcomb-ctn">
                         <h2>Wosh Water</h2>
                         <p>{{$nWater}} <span class="bread-ntd">orang </span></p>
-                        <button class="btn btn-success notika-btn-success">Lihat Tim</button>
+                        <button class="btn btn-success notika-btn-success" data-toggle="modal" data-target="#detailTimWater">Lihat Tim</button>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                     <div class="breadcomb-ctn">
                         <h2>Tim Shelter Barak</h2>
                         <p>{{$nShelter}} <span class="bread-ntd">orang </span></p>
-                        <button class="btn btn-success notika-btn-success">Lihat Tim</button>
+                        <button class="btn btn-success notika-btn-success" data-toggle="modal" data-target="#detailTimShelter">Lihat Tim</button>
                     </div>
                 </div>
             </div>
@@ -140,10 +140,230 @@
                     <div class="breadcomb-ctn">
                         <h2>Tim RFL</h2>
                         <p>{{$nRfl}} <span class="bread-ntd">orang </span></p>
-                        <button class="btn btn-success notika-btn-success">Lihat Tim</button>
+                        <button class="btn btn-success notika-btn-success" data-toggle="modal" data-target="#detailTimRfl">Lihat Tim</button>
                     </div>
                 </div>
             </div>
+
+            {{-- Modal Tim Assessment --}}
+            <div class="modal fade" id="detailTimAssessment" role="dialog">
+                <div class="modal-dialog modals-default">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <h2>Anggota Tim Assessment</h2>
+                            <div class="bsc-tbl">
+                                <table class="table table-sc-ex">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                            @foreach ($timAssessment as $assessment)
+                                                <tr>
+                                                    <td>{{$assessment->nama}}</td>
+                                                </tr>
+                                            @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Modal Tim Evakuasi --}}
+            <div class="modal fade" id="detailTimEvakuasi" role="dialog">
+                    <div class="modal-dialog modals-default">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Anggota Tim Evakuasi</h2>
+                                <div class="bsc-tbl">
+                                    <table class="table table-sc-ex">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                                @foreach ($timEvakuasi as $evakuasi)
+                                                    <tr>
+                                                        <td>{{$evakuasi->nama}}</td>
+                                                    </tr>
+                                                @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            {{-- Modal Tim Kesehatan --}}
+            <div class="modal fade" id="detailTimKesehatan" role="dialog">
+                    <div class="modal-dialog modals-default">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Anggota Tim Kesehatan</h2>
+                                <div class="bsc-tbl">
+                                    <table class="table table-sc-ex">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($timKesehatan as $kesehatan)
+                                                <tr>
+                                                    <td>{{$kesehatan->nama}}</td>
+                                                </tr>                                        
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            {{-- Modal Tim Dapur --}}
+            <div class="modal fade" id="detailTimDapur" role="dialog">
+                    <div class="modal-dialog modals-default">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Anggota Tim Dapur</h2>
+                                <div class="bsc-tbl">
+                                    <table class="table table-sc-ex">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($timDapur as $dapur)
+                                                <tr>
+                                                    <td>{{$dapur->nama}}</td>
+                                                </tr>
+                                            @endforeach                
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            {{-- Modal Tim Water --}}
+            <div class="modal fade" id="detailTimWater" role="dialog">
+                    <div class="modal-dialog modals-default">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Anggota Tim Wosh Water</h2>
+                                <div class="bsc-tbl">
+                                    <table class="table table-sc-ex">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($timWater as $water)
+                                                <tr>
+                                                    <td>{{$water->nama}}</td>
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            {{-- Modal Tim Shelter --}}
+            <div class="modal fade" id="detailTimShelter" role="dialog">
+                    <div class="modal-dialog modals-default">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Anggota Tim Shelter</h2>
+                                <div class="bsc-tbl">
+                                    <table class="table table-sc-ex">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($timShelter as $shelter)
+                                                <tr>
+                                                    <td>{{$shelter->nama}}</td>
+                                                </tr>
+                                            @endforeach              
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            {{-- Modal Tim Shelter --}}
+            <div class="modal fade" id="detailTimRfl" role="dialog">
+                    <div class="modal-dialog modals-default">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Anggota Tim RFL</h2>
+                                <div class="bsc-tbl">
+                                    <table class="table table-sc-ex">
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($timRfl as $rfl)
+                                                <tr>
+                                                    <td>{{$rfl->nama}}</td>
+                                                </tr>
+                                            @endforeach                  
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                
+            
             <a href="/rekomendasi-tim" class="btn btn-primary notika-btn-primary col-lg-offset-5" style="margin-top: 4%">Kirim Tim</a>
         </div>
     </div>
