@@ -29,7 +29,7 @@ Route::get('/upload-rencana', 'PMI\uploadRencanaController@index');
 Route::post('/upload-rencana', 'PMI\uploadRencanaController@store');
 Route::get('/download-rencana/{filename}', 'PMI\daftarRencanaController@download');
 
-Route::get('/rekomendasi-tim', 'PMI\rekomendasiTimController@index');
+Route::get('/rekomendasi-tim/{id}', 'PMI\rekomendasiTimController@index');
 
 Route::get('/daftar-tim', 'PMI\daftarTimController@index');
 Route::get('/bentuk-tim', 'PMI\bentukTimController@index');

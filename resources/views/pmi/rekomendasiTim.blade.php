@@ -59,7 +59,7 @@
                     </div>
                     <div class="breadcomb-ctn">
                         <h2>Tim Assesment</h2>
-                        <p>4 <span class="bread-ntd">orang </span></p>
+                        <p>{{$nAssessment}} <span class="bread-ntd">orang </span></p>
                         <button class="btn btn-success notika-btn-success">Lihat Tim</button>
                     </div>
                 </div>                                    
@@ -72,7 +72,7 @@
                     </div>
                     <div class="breadcomb-ctn">
                         <h2>Tim Evakuasi</h2>
-                        <p>4 <span class="bread-ntd">orang </span></p>
+                        <p>{{$nEvakuasi}} <span class="bread-ntd">orang </span></p>
                         <button class="btn btn-success notika-btn-success">Lihat Tim</button>
                     </div>
                 </div>                                    
@@ -85,7 +85,7 @@
                     </div>
                     <div class="breadcomb-ctn">
                         <h2>Tim Kesehatan</h2>
-                        <p>4 <span class="bread-ntd">orang </span></p>
+                        <p>{{$nKesehatan}} <span class="bread-ntd">orang </span></p>
                         <button class="btn btn-success notika-btn-success">Lihat Tim</button>
                     </div>
                 </div>                                    
@@ -98,7 +98,7 @@
                     </div>
                     <div class="breadcomb-ctn">
                         <h2>Tim Dapur Umum</h2>
-                        <p>4 <span class="bread-ntd">orang </span></p>
+                        <p>{{$nDapur}} <span class="bread-ntd">orang </span></p>
                         <button class="btn btn-success notika-btn-success">Lihat Tim</button>
                     </div>
                 </div>                                    
@@ -113,7 +113,7 @@
                     </div>
                     <div class="breadcomb-ctn">
                         <h2>Wosh Water</h2>
-                        <p>4 <span class="bread-ntd">orang </span></p>
+                        <p>{{$nWater}} <span class="bread-ntd">orang </span></p>
                         <button class="btn btn-success notika-btn-success">Lihat Tim</button>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="breadcomb-ctn">
                         <h2>Tim Shelter Barak</h2>
-                        <p>4 <span class="bread-ntd">orang </span></p>
+                        <p>{{$nShelter}} <span class="bread-ntd">orang </span></p>
                         <button class="btn btn-success notika-btn-success">Lihat Tim</button>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                     </div>
                     <div class="breadcomb-ctn">
                         <h2>Tim RFL</h2>
-                        <p>4 <span class="bread-ntd">orang </span></p>
+                        <p>{{$nRfl}} <span class="bread-ntd">orang </span></p>
                         <button class="btn btn-success notika-btn-success">Lihat Tim</button>
                     </div>
                 </div>

@@ -121,6 +121,7 @@
                             <div class="basic-tb-hd">
                                 <h2>Halaman Bentuk Tim</h2>
                                 <p>Tim akan dibentuk berdasarkan laporan yang dipilih</p>
+                                <p>{{$tes}}</p>
                             </div>
                             <div class="row">
                               <div class="table-responsive">
@@ -143,7 +144,7 @@
                                             <td>{{$hasil->lokasi}}</td>
                                             <td>{{$hasil->korban}}</td>
                                             <td>{{$hasil->infrastruktur}}</td>
-                                            <td><a href="/rekomendasi-tim" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
+                                        <td><a href="/rekomendasi-tim/{{$hasil->id}}" class="btn btn-success notika-btn-success" >Bentuk Tim</a></td>
                                         </tr>
                                         @endforeach
                                     </tbody>
