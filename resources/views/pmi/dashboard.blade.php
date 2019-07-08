@@ -82,8 +82,8 @@
     </div>
 </div>
 <!-- End Status area-->
-<!-- Start Sale Statistic area-->
 
+<!-- Start Sale Statistic area-->
 <div class="sale-statistic-area">
     <div class="container">
         <div class="row">
@@ -95,8 +95,6 @@
         </div>
     </div>
 </div>
-            
-
 <!-- End Sale Statistic area-->
 
 <!-- Start Email Statistic area-->
