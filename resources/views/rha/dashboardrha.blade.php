@@ -24,7 +24,7 @@
 @section('konten')
 <div class="notika-status-area">
     <div class="container">
-    <a href="#"><img src="/dashboard/images/123.png" alt="" /></a>
+    <a href="#"><img src="/dashboard/images/2.png" alt="" /></a>
 
 
     </div>
