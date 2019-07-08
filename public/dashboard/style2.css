@@ -1636,7 +1636,7 @@ ul.wizard-nav-ac li .disabled{
 	text-align:right;
 }
 .modal-ft .btn-modal, .modals-default-cl .btn-info, .modal-sm .modal-footer .btn-default, .modal-large .modal-footer .btn-default, .modals-default .modal-footer .btn-default{
-	background:#00c292;
+	background:#089cff;
 	outline:none;
 	color:#fff;
 	border-radius:3px;
@@ -1652,7 +1652,7 @@ ul.wizard-nav-ac li .disabled{
 	margin-left:10px;
 }
 .modal-ft .btn-modal:focus, .modal-ft .btn-modal:active, .modal-ft .btn-modal:hover, .modals-default-cl .btn-info:focus, .modals-default-cl .btn-info:active, .modals-default-cl .btn-info:hover, .modals-default .modal-footer .btn-default:focus, .modals-default .modal-footer .btn-default:active, .modals-default .modal-footer .btn-default:hover, .modal-sm .modal-footer .btn-default:focus, .modal-sm .modal-footer .btn-default:active, .modal-sm .modal-footer .btn-default:hover, .modal-large .modal-footer .btn-default:focus, .modal-large .modal-footer .btn-default:active, .modal-large .modal-footer .btn-default:hover{
-	background:#00c292;
+	background:#03A9F4;
 	outline:none;
 	color:#fff;
 	box-shadow:none;
@@ -2723,7 +2723,7 @@ hr {
     content: '\e91e';
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:focus, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    background: #00c292;
+    background: #089cff;
     color: #fff!important;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -2773,7 +2773,7 @@ hr {
     vertical-align: top;
 }
 .nk-int-st:not([class*=has-]):after {
-    background: #00c292;
+    background: #089cff;
 }
 .nk-int-st:not(.disabled):after, .nk-int-st:not(.readonly):after {
     position: absolute;
@@ -3520,7 +3520,7 @@ textarea.auto-size {
     border: 0px solid #ccc;
 }
 .dropzone.dropzone-nk {
-	border: 2px dashed #00c292;
+	border: 2px dashed #089cff;
 }
 .dropzone.dropzone-nk i{
 	font-size:30px;

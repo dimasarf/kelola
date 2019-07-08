@@ -86,6 +86,7 @@
         <script src="/dashboard/js/vendor/modernizr-2.8.3.min.js"></script>
         <form action="/upload-laporan" id="demo1Upload" method="POST">
           @csrf
+        
           <div class="row" id="identitas">
             <div class="col-lg-offset-3 col-lg-6">
               <div class="modal-inner-pro">
@@ -93,9 +94,9 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-lg-offset-1 col-lg-5">
-                          <img src="/dashboard/img/logo/logo2.png" alt="" class="mx-auto" style="margin-left: 20%"/>
+                          <img src="/dashboard/img/logo/logo2.png" alt="" class="mx-auto" style="margin-left: 45%"/>
                           
-                          <h2 style="margin-top: 4%; margin-bottom: 6%; margin-left: 5%">Halaman Pelaporan Hasil Penilaian</h2>
+                          <h2 style="margin-top: 4%; margin-bottom: 6%; margin-left:30%">Halaman Pelaporan Hasil Penilaian</h2>
                       </div>
                     </div>
                   </div>
@@ -153,7 +154,7 @@
                 </div>
                 </div>
                 <div class="modal-ft">
-                  <button type="submit" class="btn btn-modal" id="next" style="margin-right: 40%; margin-top: 5%">Kirim</button>
+                  <button type="submit" class="btn btn-modal" id="next" style="margin-right: 47%; margin-top: 5%">Kirim</button>
                 </div>
               </div>
             </div>
