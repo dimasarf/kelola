@@ -521,7 +521,7 @@
     <script src="/dashboard/js/flot/curvedLines.js"></script>
     <script src="/dashboard/js/flot/flot-active.js"></script>
     <!-- knob JS
-		============================================ -->
+		========================================== -->
     <script src="/dashboard/js/knob/jquery.knob.js"></script>
     <script src="/dashboard/js/knob/jquery.appear.js"></script>
     <script src="/dashboard/js/knob/knob-active.js"></script>
