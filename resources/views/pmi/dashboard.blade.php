@@ -31,78 +31,36 @@
                             </li>
                         </ul>
                     </div>
+                    <a><img src="/dashboard/images/pmiii.png" alt="" /></a>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>    
 @endsection
 
 @section('konten')
-<div class="notika-status-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">50,000</span></h2>
-                        <p>Total Website Traffics</p>
-                    </div>
-                    <div class="sparkline-bar-stats1">9,4,8,6,5,6,4,8,3,5,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">90,000</span>k</h2>
-                        <p>Website Impressions</p>
-                    </div>
-                    <div class="sparkline-bar-stats2">1,4,8,3,5,6,4,8,3,3,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2>$<span class="counter">40,000</span></h2>
-                        <p>Total Online Sales</p>
-                    </div>
-                    <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">1,000</span></h2>
-                        <p>Total Support Tickets</p>
-                    </div>
-                    <div class="sparkline-bar-stats4">2,4,8,4,5,7,4,7,3,5,7,5</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Status area-->
 
-<!-- Start Sale Statistic area-->
+
 <div class="sale-statistic-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="flot-chart-wp mg-t-30">
-                    <div id="bar-chart" class="flot-chart flot-chr-pro"></div>
+                <div class="jumbotron">
+                    <div class="container">
+                        <h2 class="display-3">Selamat Datang di Dashboard PMI</h2>
+                        <p>PMI adalah organisasi kemanusiaan yang berstatus badan hukum, 
+                        diundangkan dengan Undang-Undang nomor 1 tahun 2018 tentang Kepalangmerahan guna menjalankan kegiatan Kepalangmerahan  
+                        sesuai dengan Konvensi Jenewa Tahun 1949, dengan tujuan untuk mencegah dan meringankan penderitaan dan melindungi korban 
+                        tawanan perang dan bencana, tanpa membedakan agama, bangsa, suku bangsa, warna kulit, jenis kelamin, golongan, dan Pandangan Politik.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
-
-        </div>
-</div>
-<!-- End Email Statistic area-->
 
         
 @endsection
