@@ -93,10 +93,10 @@
                 <div class="row">
                   <div class="container">
                     <div class="row">
-                      <div class="col-lg-offset-1 col-lg-5">
-                          <img src="/dashboard/img/logo/logo2.png" alt="" class="mx-auto" style="margin-left: 45%"/>
+                      <div class="col-lg-offset-5 col-lg-5 center-block">
+                        <img src="/dashboard/img/logo/logo2.png" alt="" class="col-lg-offset-5" style=""/>
                           
-                          <h2 style="margin-top: 4%; margin-bottom: 6%; margin-left:30%">Halaman Pelaporan Hasil Penilaian</h2>
+                          <h2 style="margin-top: 4%; margin-bottom: 6%; " class="col-lg-offset-3">Halaman Pelaporan Hasil Penilaian</h2>
                       </div>
                     </div>
                   </div>
