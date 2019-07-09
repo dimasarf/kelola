@@ -362,9 +362,17 @@
                         </div>
                     </div>
             </div>
-                
-            
-            <a href="/rekomendasi-tim" class="btn btn-primary notika-btn-primary col-lg-offset-5" style="margin-top: 4%">Kirim Tim</a>
+            <a href="/kirim-tim" class="btn btn-primary notika-btn-primary col-lg-offset-5" style="margin-top: 4%">Kirim Tim</a>
+            <br>
+            @if(Session::has('Pesan'))
+            <div class="row">
+              <div class="col-lg-offset-3 col-lg-6">
+                  <div class="alert alert-success" role="alert">
+                      Data Berhasil Disimpan!
+                  </div>
+              </div>
+            </div>
+            @endif
         </div>
     </div>
 </div>

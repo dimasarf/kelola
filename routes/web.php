@@ -33,9 +33,11 @@ Route::get('/rekomendasi-tim/{id}', 'PMI\rekomendasiTimController@index');
 
 Route::get('/daftar-tim', 'PMI\daftarTimController@index');
 Route::get('/bentuk-tim', 'PMI\bentukTimController@index');
+Route::get('/detail-tim/{id}', 'PMI\detailTimController@index');
 
 Route::get('/daftar-rencana', 'PMI\daftarRencanaController@index');
 Route::get('/laporan','PMI\LaporanController@index');
+Route::get('/kirim-tim','PMI\rekomendasiTimController@kirim')->name('kirim');
 
 //Route RHA
 Route::get('dashboard-rha','rha\dashboardRhaController@index');

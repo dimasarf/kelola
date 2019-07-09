@@ -40,8 +40,10 @@
 @section('konten')
 <link rel="stylesheet" href="/dashboard/css/wave/button.css">
 <div class="container">
+<h3 style="margin-left: 1%; margin-bottom: 1%">Daftar Rekomendasi Tim</h3>
+@foreach ($dataLaporan as $item)
     <div class="row">
-        <h3 style="margin-left: 1%; margin-bottom: 1%">Daftar Rekomendasi Tim</h3>
+        
         <div class="col-lg-7 mx-auto">
                 <div class="recent-post-wrapper notika-shadow sm-res-mg-t-30 tb-res-ds-n dk-res-ds">
                       <div class="row">
@@ -54,8 +56,8 @@
                                                     <img src="img/post/2.jpg" alt="" />
                                                 </div>
                                                 <div class="recent-post-it-ctn">
-                                                    <h2>Banjir</h2>
-                                                    <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
+                                                    <h2>{{$item->jenis_bencana}}</h2>
+                                                    <span>{{$item->lokasi}}</span><p>{{$item->created_at}}</p>
                                                 </div>
                                             </div>
                                         </a>
@@ -63,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-offset-2 col-lg-2">
-                                <a href="/rekomendasi-tim"class="btn btn-success notika-btn-success">Lihat Tim</a>
+                                <a href="/detail-tim/{{$item->id_laporan}}"class="btn btn-success notika-btn-success">Lihat Tim</a>
                             </div>
                         </div>
                         
@@ -72,35 +74,8 @@
         
     </div>
     <br>
-    <div class="row">
-            <div class="col-lg-7   center-block">
-                    <div class="recent-post-wrapper notika-shadow sm-res-mg-t-30 tb-res-ds-n dk-res-ds">
-                          <div class="row">
-                                <div class="col-lg-8">
-                                    <div class="recent-post-items">
-                                        <div class="recent-post-signle rct-pt-mg-wp">
-                                            <a href="#">
-                                                <div class="recent-post-flex">
-                                                    <div class="recent-post-img">
-                                                        <img src="img/post/2.jpg" alt="" />
-                                                    </div>
-                                                    <div class="recent-post-it-ctn">
-                                                        <h2>Banjir</h2>
-                                                        <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-offset-2 col-lg-2">
-                                    <a href="#"class="btn btn-success notika-btn-success">Lihat Tim</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-            </div>
-            
-    </div>
+@endforeach    
+    
+   
 </div>    
 @endsection
